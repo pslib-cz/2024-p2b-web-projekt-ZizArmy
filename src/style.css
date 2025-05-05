@@ -53,12 +53,12 @@ html, body {
 /* Ikony vpravo */
 .icons {
   display: flex;
-  gap: 10px;
+  gap: 25px;
 }
 
 .icon-placeholder {
-  width: 30px;
-  height: 30px;
+  width: 48px;
+  height: 48px;
   background-color: gray;
   border-radius: 6px;
 }
