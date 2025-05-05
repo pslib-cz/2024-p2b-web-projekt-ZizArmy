@@ -1,13 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>TiskArmy e-shop (mobil)</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- Horní červený banner -->
+      <div class="banner">
+        <!-- Profilovka vlevo -->
+        <div class="profile">
+          <img src="/public/profilovka.png" alt="Profil" class="profile-img" />
+        </div>
+
+        <!-- Ikony vpravo -->
+        <div class="icons">
+          <div class="icon-placeholder"></div>
+          <div class="icon-placeholder"></div>
+          <div class="icon-placeholder"></div>
+        </div>
+      </div>
+
+      <!-- Otočené pozadí pod bannerem -->
+      <div class="background-image">
+        <div class="rotated-background"></div>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
