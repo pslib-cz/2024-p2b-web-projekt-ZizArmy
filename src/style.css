@@ -2,6 +2,7 @@
 
 html, body {
   font-family: "Inter";
+  height: 100%;
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -53,6 +54,7 @@ html, body {
 }
 
 .content {
+  flex: 1;
   color: white;
   text-align: center;
 }
@@ -61,16 +63,18 @@ h1 {
   margin: 15px;
   font-size: 36px;
   margin-bottom: 5px;
+  text-shadow: -2px 2px rgba(112, 0, 0, 1);
 }
 
 h2 {
   margin: 10px;
   font-size: 30px; 
   font-weight: bold;
+  text-shadow: -2px 2px rgba(112, 0, 0, 1);
 }
 
 .card {
-  background-color:rgba(112, 0, 0, 0.85);
+  background-color:rgba(112, 0, 0, 1);
   margin: 31px;
   border-radius: 15px;
   text-align: left;
@@ -82,12 +86,29 @@ h2 {
   padding: 10px;
   text-align: center;
   color: #ffffff;
+  text-shadow: -2px 2px rgba(0, 0, 0, 1);
 }
 
 .card p {
   margin: 0;
   padding: 20px;
   font-size: 16px;
+}
+.card ul {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.card li {
+  margin: 0;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
@@ -98,4 +119,110 @@ h2 {
   font-size: 14px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+
+.form-card {
+  background-color: rgba(112, 0, 0, 0.85);
+  margin: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.form-card h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.kontaktni-formular input,
+.kontaktni-formular textarea {
+  font-family: "Inter";
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.kontaktni-formular button {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.primy-kontakt {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.primy-kontakt a {
+  color: white;
+  text-decoration: none;
+}
+
+.primy-kontakt h3 {
+  font-size: 22px;
+  padding: 0;
+}
+
+.primy-kontakt p{
+  padding: 10px;
+}
+
+
+.gallery-section {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.gallery-frame {
+  background-color: white;
+  border-radius: 24px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 300px;
+}
+
+.gallery-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+  max-width: 150px;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.photo-caption {
+  font-size: 16px;
+  margin-top: 5px;
 }
