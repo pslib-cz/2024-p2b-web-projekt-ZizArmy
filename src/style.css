@@ -1,43 +1,42 @@
-/* === Hlavní pozadí přes celou obrazovku === */
-
+/* === Globální styly === */
 html, body {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
   font-weight: bold;
 }
 
+/* === Pozadí === */
 .background-image {
   background-color: black;
   min-height: 100vh;
-  background-image: url("/public/tiskarmy_mobil.webp");
+  background-image: url("/tiskarmy_mobil.webp");
   background-position: center;
   background-size: cover;
   background-attachment: scroll; /* kvůli mobilům */
 }
 
+/* === Hlavička (banner) === */
 .banner {
   width: 100%;
-  padding: 10px 10px;
+  padding: 10px;
   background-color: rgba(112, 0, 0, 0.85);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* zalomení na malých displejích */
+  flex-wrap: wrap;
   box-sizing: border-box;
 }
 
-/* Profilovka vlevo */
 .profile-img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
 }
 
-/* Ikony vpravo */
 .icons {
   display: flex;
   gap: 20px;
@@ -46,11 +45,17 @@ html, body {
   align-items: center;
 }
 
-/* Placeholder pro ikony (jen pro ukázku) */
 .icon-placeholder {
   width: 48px;
   height: 48px;
   border-radius: 8px;
+}
+
+/* === Hlavní obsah === */
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
@@ -73,19 +78,23 @@ h2 {
   text-shadow: -2px 2px rgba(112, 0, 0, 1);
 }
 
-.card {
-  background-color:rgba(112, 0, 0, 1);
-  margin: 31px;
+/* === Karty === */
+.card, .form-card {
+  background-color: rgba(112, 0, 0, 0.85);
   border-radius: 15px;
   text-align: left;
-} 
+  margin: 20px auto; 
+  padding: 20px; 
+  max-width: 600px; 
+  width: 100%; 
+  box-sizing: border-box;
+}
 
-.card h3 {
-  font-size: 24px ;
-  margin: 0;
-  padding: 10px;
+.card h3, .form-card h3 {
+  font-size: 22px;
+  margin: 0 0 15px 0;
   text-align: center;
-  color: #ffffff;
+  color: white;
   text-shadow: -2px 2px rgba(0, 0, 0, 1);
 }
 
@@ -94,51 +103,21 @@ h2 {
   padding: 20px;
   font-size: 16px;
 }
+
 .card ul {
   margin: 0;
   padding-bottom: 10px;
 }
 
 .card li {
-  margin: 0;
   padding-bottom: 10px;
   padding-right: 20px;
 }
 
-#app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer {
-  background-color: rgba(112, 0, 0, 0.85);
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-
-.form-card {
-  background-color: rgba(112, 0, 0, 0.85);
-  margin: 30px;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.form-card h3 {
-  font-size: 22px;
-  color: white;
-  margin-bottom: 15px;
-}
-
+/* === Formulář === */
 .kontaktni-formular input,
 .kontaktni-formular textarea {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -149,16 +128,24 @@ h2 {
 }
 
 .kontaktni-formular button {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
+  background-color: black;
+  color: white;
   border: none;
   padding: 12px 24px;
   border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
   margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.kontaktni-formular button:focus {
+  outline: 2px solid white;
+}
+
+/* === Přímý kontakt === */
 .primy-kontakt {
   color: white;
   text-align: center;
@@ -173,14 +160,15 @@ h2 {
 
 .primy-kontakt h3 {
   font-size: 22px;
-  padding: 0;
+  margin: 0;
 }
 
-.primy-kontakt p{
+.primy-kontakt p {
   padding: 10px;
+  margin: 0;
 }
 
-
+/* === Galerie === */
 .gallery-section {
   color: white;
   text-align: center;
@@ -217,22 +205,17 @@ h2 {
   display: block;
 }
 
-/* Popisek pod fotkou – zarovnání vlevo */
 .caption {
   font-size: 16px;
-  color: rgb(255, 255, 255);
-  margin: 0;
+  color: white;
   margin-top: 10px;
   padding: 0 20px;
   text-align: left;
 }
 
-/* Seznamy – zarovnání vlevo a odsazení */
 .caption-ul {
   margin: 0;
-  padding-left: 40px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding: 0 20px 20px 40px;
   text-align: left;
   list-style-type: disc;
 }
@@ -241,7 +224,18 @@ h2 {
   margin-top: 5px;
   padding-left: 20px;
   list-style-type: circle;
-  text-align: left;
 }
+
+/* === Paticka === */
+.footer {
+  background-color: rgba(112, 0, 0, 0.85);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 
 
