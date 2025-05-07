@@ -11,7 +11,7 @@ html, body {
 .background-image {
   background-color: black;
   min-height: 100vh;
-  background-image: url("/public/tiskarmy.png");
+  background-image: url("/public/tiskarmy_mobil.webp");
   background-position: center;
   background-size: cover;
   background-attachment: scroll; /* kvůli mobilům */
@@ -183,7 +183,7 @@ h2 {
 
 .gallery-section {
   color: white;
-  text-align: center;
+  text-align: center; /* zůstane pro nadpis sekce */
   padding: 20px;
 }
 
@@ -193,36 +193,60 @@ h2 {
   font-weight: bold;
 }
 
-.gallery-frame {
-  background-color: white;
-  border-radius: 24px;
-  padding: 10px;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 300px;
-}
-
-.gallery-photo {
+.swiper {
   width: 100%;
-  border-radius: 10px;
+  max-width: 90vw;
+  margin: auto;
+  border-radius: 20px;
+  background: rgba(112, 0, 0, 0.85);
+  padding: 10px;
+  box-sizing: border-box;
+  transition: max-width 0.3s ease;
 }
 
-.gallery-controls {
+.swiper-slide {
   display: flex;
-  justify-content: space-between;
-  margin: 15px auto;
-  max-width: 150px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.arrow-btn {
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
 }
 
-.photo-caption {
+/* Popisek pod fotkou – zarovnání vlevo */
+.caption {
   font-size: 16px;
-  margin-top: 5px;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  margin-top: 10px;
+  padding: 0 20px;
+  text-align: left; /* přidáno */
 }
+
+/* Seznamy – zarovnání vlevo a odsazení */
+.caption-ul {
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  list-style-type: disc;
+}
+
+.caption-ul ul {
+  margin-top: 5px;
+  padding-left: 20px;
+  list-style-type: circle;
+  text-align: left;
+}
+
+/* Barva šipek */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+

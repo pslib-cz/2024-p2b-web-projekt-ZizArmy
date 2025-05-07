@@ -5,10 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TiskArmy e-shop (mobil)</title>
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <div id="app" class="background-image">
@@ -16,15 +18,15 @@
       <div class="banner">
         <!-- Profilovka vlevo -->
         <div class="profile">
-          <img src="/public/profilovka.png" alt="Profil" class="profile-img" />
+          <img src="/public/profilovka.webp" alt="Profil" class="profile-img" />
         </div>
 
         <!-- Ikony vpravo -->
         <div class="icons">
-          <div class="icon-placeholder"><a href="/index.html"><img src="/public/Home.png"/></a></div>
-          <div class="icon-placeholder"><a href="/indexes/index_galerie.html"><img src="/public/Image.png"/></a></div>
-          <div class="icon-placeholder"><a href="/indexes/index_sluzby.html"><img src="/public/Dollar sign.png"/></a></div>
-          <div class="icon-placeholder"><a href="/indexes/index_kontakt.html"><img src="/public/Phone.png"/></a></div>
+          <div class="icon-placeholder"><a href="/index.html"><img src="/public/Home.svg"/></a></div>
+          <div class="icon-placeholder"><a href="/indexes/index_galerie.html"><img src="/public/Image.svg"/></a></div>
+          <div class="icon-placeholder"><a href="/indexes/index_sluzby.html"><img src="/public/Dollar sign.svg"/></a></div>
+          <div class="icon-placeholder"><a href="/indexes/index_kontakt.html"><img src="/public/Phone.svg"/></a></div>
         </div>
       </div>
       <div class="content">
@@ -32,17 +34,145 @@
 
         <div class="gallery-section">
           <h2>Co jsme pro vás vytvořili</h2>
-          
-          <div class="gallery-frame">
-            <img src="/public/Ram_oci.webp" alt="Ukázka 3D tisku" class="gallery-photo">
-          </div>
         
-          <div class="gallery-controls">
-            <button class="arrow-btn">←</button>
-            <button class="arrow-btn">→</button>
-          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/public/Ram_oci.webp" alt="Foto 1">
+                <h2>RAM Krytka na Tažnou Kouli (velká velikost)</h2>
+                <p class="caption">
+                  Prodám stylovou krytku na tažnou kouli ve tvaru RAM. Designový doplněk pro váš vůz, který zaujme na první pohled. Vyrobeno z kvalitního PETG filamentu – odolné vůči počasí, UV záření i mechanickému opotřebení. Ideální pro ochranu tažného zařízení a zároveň výrazný vizuální prvek.
+                </p>
+                <ul class="caption-ul">
+                  <li><strong>Specifikace:</strong>
+                    <ul>
+                      <li>Materiál: PETG</li>
+                      <li>Barva: Transparent Red with Black (možnost přizpůsobení dle přání)</li>
+                      <li>Unikátní design ve tvaru RAM</li>
+                      <li>Pasuje na všechny standardní tažné koule</li>
+                    </ul>
+                  </li>
+                  <li><strong>Ceník (dle barevné varianty):</strong>
+                    <ul>
+                      <li>Jednobarevná verze: 1000 Kč</li>
+                      <li>Barevné oči: 1100 Kč</li>
+                      <li>Individuální barevná kombinace: cena dohodou</li>
+                    </ul>
+                  </li>
+                  <li>Osobní odběr nebo zaslání poštou po celé ČR.</li>
+                </ul>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="/public/stredni_RAM.webp" alt="Foto 1">
+                <h2>RAM na kapotu (střední velikost)</h2>
+                <p class="caption">
+                  Prodám stylovou krytku na tažnou kouli ve tvaru RAM. Designový doplněk pro váš vůz, který zaujme na první pohled. Vyrobeno z kvalitního PETG filamentu – odolné vůči počasí, UV záření i mechanickému opotřebení. Ideální pro ochranu tažného zařízení a zároveň výrazný vizuální prvek.
+                </p>
+                <ul class="caption-ul">
+                  <li><strong>Specifikace:</strong>
+                    <ul>
+                      <li>Materiál: PETG</li>
+                      <li>Barva: Transparent Red with Black (možnost přizpůsobení dle přání)</li>
+                      <li>Unikátní design ve tvaru RAM</li>
+                    </ul>
+                  </li>
+                  <li><strong>Ceník (dle barevné varianty):</strong>
+                    <ul>
+                      <li>Jednobarevná verze: 400 kč</li>
+                      <li>Barevné oči: 11 Kč</li> 
+                      <li>Individuální barevná kombinace: cena dohodou</li>
+                    </ul>
+                  </li>
+                  <li>Osobní odběr nebo zaslání poštou po celé ČR.</li>
+                </ul>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="/public/maly_RAM_s_podstavcem.webp" alt="Foto 1">
+                <h2>RAM na kapotu (malá velikost)</h2>
+                <p class="caption">
+                  Prodám stylovou krytku na tažnou kouli ve tvaru RAM. Designový doplněk pro váš vůz, který zaujme na první pohled. Vyrobeno z kvalitního PETG filamentu – odolné vůči počasí, UV záření i mechanickému opotřebení. Ideální pro ochranu tažného zařízení a zároveň výrazný vizuální prvek.
+                </p>
+                <ul class="caption-ul">
+                  <li><strong>Specifikace:</strong>
+                    <ul>
+                      <li>Materiál: PETG</li>
+                      <li>Barva: Transparent Red with Black (možnost přizpůsobení dle přání)</li>
+                      <li>Unikátní design ve tvaru RAM</li>
+                      <li>Pasuje na všechny standardní tažné koule</li>
+                    </ul>
+                  </li>
+                  <li><strong>Ceník (dle barevné varianty):</strong>
+                    <ul>
+                      <li>Jednobarevná verze: 1000 Kč</li>
+                      <li>Barevné oči: 1100 Kč</li>
+                      <li>Individuální barevná kombinace: cena dohodou</li>
+                    </ul>
+                  </li>
+                  <li>Osobní odběr nebo zaslání poštou po celé ČR.</li>
+                </ul>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="/public/zastrcka.webp" alt="Foto 1">
+                <h2>Adaptér pro americké tažné zařízení</h2>
+                <p class="caption">
+                  Prodám stylovou krytku na tažnou kouli ve tvaru RAM. Designový doplněk pro váš vůz, který zaujme na první pohled. Vyrobeno z kvalitního PETG filamentu – odolné vůči počasí, UV záření i mechanickému opotřebení. Ideální pro ochranu tažného zařízení a zároveň výrazný vizuální prvek.
+                </p>
+                <ul class="caption-ul">
+                  <li><strong>Specifikace:</strong>
+                    <ul>
+                      <li>Materiál: PETG</li>
+                      <li>Barva: Transparent Red with Black (možnost přizpůsobení dle přání)</li>
+                      <li>Unikátní design ve tvaru RAM</li>
+                      <li>Pasuje na všechny standardní tažné koule</li>
+                    </ul>
+                  </li>
+                  <li><strong>Ceník (dle barevné varianty):</strong>
+                    <ul>
+                      <li>Jednobarevná verze: 1000 Kč</li>
+                      <li>Barevné oči: 1100 Kč</li>
+                      <li>Individuální barevná kombinace: cena dohodou</li>
+                    </ul>
+                  </li>
+                  <li>Osobní odběr nebo zaslání poštou po celé ČR.</li>
+                </ul>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="/public/RAM_logo.webp" alt="Foto 1">
+                <h2>Svítící logo RAM</h2>
+                <p class="caption">
+                  Prodám stylovou krytku na tažnou kouli ve tvaru RAM. Designový doplněk pro váš vůz, který zaujme na první pohled. Vyrobeno z kvalitního PETG filamentu – odolné vůči počasí, UV záření i mechanickému opotřebení. Ideální pro ochranu tažného zařízení a zároveň výrazný vizuální prvek.
+                </p>
+                <ul class="caption-ul">
+                  <li><strong>Specifikace:</strong>
+                    <ul>
+                      <li>Materiál: PETG</li>
+                      <li>Barva: Transparent Red with Black (možnost přizpůsobení dle přání)</li>
+                      <li>Unikátní design ve tvaru RAM</li>
+                      <li>Pasuje na všechny standardní tažné koule</li>
+                    </ul>
+                  </li>
+                  <li><strong>Ceník (dle barevné varianty):</strong>
+                    <ul>
+                      <li>Jednobarevná verze: 1000 Kč</li>
+                      <li>Barevné oči: 1100 Kč</li>
+                      <li>Individuální barevná kombinace: cena dohodou</li>
+                    </ul>
+                  </li>
+                  <li>Osobní odběr nebo zaslání poštou po celé ČR.</li>
+                </ul>
+              </div>
+
+
+            </div>
         
-          <p class="photo-caption">Popis fotky, která je zobrazena</p>
+            <!-- Šipky -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
         
       </div>
@@ -54,4 +184,17 @@
 
     <script type="module" src="/src/main.js"></script>
   </body>
+
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });
+</script>
 </html>
