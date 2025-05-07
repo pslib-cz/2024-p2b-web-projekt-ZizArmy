@@ -11,7 +11,7 @@ html, body {
 .background-image {
   background-color: black;
   min-height: 100vh;
-  background-image: url("/tiskarmy_mobil.webp");
+  background-image: url("tiskarmy_mobil.webp");
   background-position: center;
   background-size: cover;
   background-attachment: scroll; /* kvůli mobilům */
