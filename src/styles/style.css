@@ -91,15 +91,20 @@ h2 {
   text-align: center;
 }
 
+.formular{
+  flex: 1;
+  color: white;
+  text-align: center;
+}
+
 /* === Karty === */
-.card, .form-card {
+.card-k, .form-card-k {
   background-color: rgba(112, 0, 0, 0.85);
   border-radius: 15px;
   text-align: left;
   margin: 20px auto; 
   padding: 20px; 
-  max-width: 600px; 
-  width: 100%; 
+  max-width: 600px;  
   box-sizing: border-box;
 }
 
@@ -279,31 +284,60 @@ h2 {
     height: 100px;
   }
 
-  .icon-placeholder {
-    width: 60px;
-    height: 60px;
-  }
-
   .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    height: 65vh; 
+    max-width: auto;
+    margin: 0 auto; 
+    padding: 0 20px; 
     box-sizing: border-box;
-    margin-left: 50px;
-    margin-right: 50px;
     margin-bottom: 50px;
   }
 
   .card {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .card p {
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: clamp(16px, 1.30vw, 24px);
+  }
+
+  .form-card {
+    padding: 30px;
+    background-color: rgba(112, 0, 0, 0.85);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* === Obal formuláře a textu === */
+  .formular {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 100vw;        
+  margin: 0;           
+  }
+  .card-k{
+  margin: 0 auto; 
+  padding: 20px; 
+  max-width: 1024px;  
+  box-sizing: border-box;
+  }
+  .form-card-k {
+  background-color: rgba(112, 0, 0, 0.85);
+  border-radius: 15px;
+  text-align: left;
+  margin: 0; 
+  padding: 20px; 
+  max-width: 100%; 
+  width: 100%; 
+  box-sizing: border-box;
   }
 }
+
