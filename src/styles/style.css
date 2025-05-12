@@ -172,7 +172,7 @@ h2 {
 .gallery-section {
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 60px;
 }
 
 .gallery-section h2 {
@@ -203,6 +203,14 @@ h2 {
   height: auto;
   border-radius: 10px;
   display: block;
+}
+
+.swiper-button-prev {
+  left: 10px !important;
+}
+
+.swiper-button-next {
+  right: 10px !important;
 }
 
 .caption {
