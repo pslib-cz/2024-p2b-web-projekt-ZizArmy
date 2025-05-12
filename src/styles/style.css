@@ -173,6 +173,7 @@ h2 {
   color: white;
   text-align: center;
   padding: 60px;
+  --swiper-theme-color:  rgba(112, 0, 0, 0.85);
 }
 
 .gallery-section h2 {
@@ -190,6 +191,7 @@ h2 {
   padding: 10px;
   box-sizing: border-box;
   transition: max-width 0.3s ease;
+
 }
 
 .swiper-slide {
