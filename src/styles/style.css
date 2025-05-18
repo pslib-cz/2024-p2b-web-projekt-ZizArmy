@@ -431,7 +431,7 @@ h2 {
     transition: transform 0.8s ease, background-color 0.8s ease;
   }
   .icon-placeholder:hover {
-    background-color: #ff0000;
+    background-color: #000000;
     transform: scale(1.05);
   }
   .email a {
