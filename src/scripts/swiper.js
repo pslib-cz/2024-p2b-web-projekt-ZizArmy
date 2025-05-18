@@ -6,4 +6,7 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  slidesPerView: 1,
+  centeredSlides: false,
+  spaceBetween: 0,
 });
