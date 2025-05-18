@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/2024-p2b-web-projekt-ZizArmy/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
     <script type="module" crossorigin src="/2024-p2b-web-projekt-ZizArmy/assets/main-l0sNRNKZ.js"></script>
-    <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-ZizArmy/assets/style-DFn9lzI5.css">
+    <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-ZizArmy/assets/style-BdT5a4zQ.css">
   </head>
   <body>
     <div id="app" class="background-image">
@@ -42,7 +42,7 @@
           <!-- Přímý kontakt -->
           <div class="primy-kontakt">
             <h3>Přímý kontakt</h3>
-            <p>E-mail: <a href="mailto:tiskarmy@gmail.com">tiskarmy@gmail.com</a></p>
+            <p class="email">E-mail: <a href="mailto:tiskarmy@gmail.com">tiskarmy@gmail.com</a></p>
           </div>
         </div>
 
@@ -50,10 +50,10 @@
         <div class="form-card-k">
           <h3>Kontaktní formulář</h3>
           <form class="kontaktni-formular">
-            <input type="text" placeholder="Jméno" required>
-            <input type="email" placeholder="E-mail" required>
-            <input type="text" placeholder="Předmět zprávy" required>
-            <textarea placeholder="Vaše zpráva" rows="4" required></textarea>
+            <input type="text" name="jmeno" placeholder="Jméno" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="predmet" placeholder="Předmět zprávy" required>
+            <textarea name="zprava" placeholder="Vaše zpráva" rows="4" required></textarea>
             <button type="submit">Odeslat</button>
           </form>
         </div>
